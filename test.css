@@ -1,0 +1,239 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+}
+
+ul {
+    list-style-type: none;
+}
+
+:root {
+    --bg-primary: #fff;
+    --primary-text: #181818;
+    --highlight: #1e90ff;
+    --bg-secondary: #fafafa;
+}
+
+body {
+    background-color: var(--bg-primary);
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--bg-primary);
+    height: 10vh;
+    min-height: 90px;
+    width: 100%;
+    z-index: 999;
+    padding: 0 max(5vw, 24px);
+    border: 2px solid #88888838;
+}
+
+header .logo {
+    width: 220px;
+    height: auto;
+}
+
+header .main-nav {
+    width: 100%;
+    height: 100%;
+}
+
+header .main-nav ul {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 100%;
+}
+
+header .main-nav ul li {
+    display: inline-block;
+    padding-right: 46px;
+}
+
+header .main-nav ul li:nth-last-child(1) {
+    padding-right: 0;
+}
+
+header .main-nav a {
+    position: relative;
+    color: var(--primary-text);
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 5px 0;
+}
+
+header .main-nav .nav-cta {
+    border: none;
+    display: inline-block;
+    background-color: var(--highlight);
+    padding: 12px;
+    color: var(--bg-primary);
+    font-size: 20px;
+    font-weight: 500;
+    border-radius: 10px;
+    white-space: nowrap;
+}
+
+
+
+header .main-nav a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -3px;
+    width: 0;
+    height: 3px;
+    background-color: var(--highlight);
+    transition: width 0.3s ease-in-out;
+}
+
+header .main-nav a:hover::after {
+    width: 100%;
+}
+
+/* Hero section */
+.hero {
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 80vh;
+    min-height: 600px;
+    max-height: 800px;
+}
+
+.right-hero {
+    position: absolute;
+    bottom: 0;
+    right: max(5vw, 24px);
+}
+
+.right-hero img {
+    display: flex;
+    width: 70vh;
+    min-height: 650px;
+    object-fit: cover;
+}
+
+.bg-color {
+    position: absolute;
+    width: 400px;
+    height: 400px;
+    background: var(--highlight);
+    right: max(5vw, 24px);
+    top: 20vh;
+    z-index: -1;
+    border-radius: 50%;
+    filter: blur(110px);
+}
+
+.left-hero {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    max-width: 50%;
+}
+
+.left-hero .title-hero {
+    display: inline-block;
+    font-size: 60px;
+    line-height: 100%;
+    font-weight: 900;
+    letter-spacing: -1px;
+    margin: 16px 0;
+    z-index: 2;
+    padding-bottom: 10px;
+    background: linear-gradient(90deg, #1e90ff 20%, #0077b6 60%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+.cotacao-cta {
+    display: flex;
+    width: 700px;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    gap: 20px;
+    flex-direction: column;
+    background: rgb(240, 240, 240); /* Fundo claro */
+    border-radius: 12px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1), /* Sombra mais leve */
+        -5px -5px 10px rgba(255, 255, 255, 0.3); /* Sombra clara */
+    z-index: 99;
+}
+
+.title-cotacao {
+    color: #333; /* Cor escura para o texto */
+    font-weight: 600;
+    text-align: center;
+    font-size: 32px;
+}
+
+.form-hero {
+    width: 100%;
+    display: grid; /* Use grid para o layout de duas colunas */
+    grid-template-columns: repeat(2, 1fr); /* Duas colunas */
+    gap: 15px; /* Espaçamento entre as colunas */
+}
+
+.form-hero label {
+    display: block;
+    margin-bottom: 5px;
+    color: #333; /* Cor escura para a label */
+    font-size: 20px;
+}
+
+.form-hero input[type="text"],
+.form-hero input[type="email"],
+.form-hero input[type="tel"],
+.form-hero input[type="date"],
+.form-hero select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc; /* Bordas claras */
+    border-radius: 6px;
+    font-size: 16px;
+    box-sizing: border-box; /* Largura total incluindo padding */
+    padding-left: 35px; /* Espaço para o ícone */
+    background-color: #fff; /* Fundo branco */
+    color: #333; /* Texto escuro */
+}
+
+.form-hero input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+.form-hero .input-group {
+    position: relative;
+}
+
+.form-hero .input-group i {
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #666; /* Cor escura para o ícone */
+    z-index: 99;
+}
+
+.form-hero .input-group input,
+.form-hero .input-group select {
+    padding-left: 35px; /* Espaço para o ícone */
+}
+
+/* Ajustes para a responsividade */
+@media (max-width: 768px) {
+    .form-hero {
+        grid-template-columns: 1fr; /* Uma coluna em telas menores */
+    }
+}
+
