@@ -1,0 +1,75 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+:root {
+  --bg-white: #f3f3f3;
+  --text-dark: #211e22;
+  --bg-dark: #000508;
+  --text-light: #fcfcfc;
+  --primary-color: #2073b3;
+  --primary-color-hover: #2188c2;
+  --secondary-color: #01a833;
+  --secondary-color-hover: #0cc543;
+}
+
+body {
+  background: var(--bg-white);
+}
+
+/* Botões */
+
+.btn-contact,
+.btn-learn-more,
+.btn-submit {
+    font-weight: 600;
+    color: var(--text-light);
+    font-size: 22px;
+}
+
+.btn-learn-more {
+    background-color: var(--primary-color);
+}
+
+.btn-contact {
+    background-color: var(--secondary-color);
+}
+
+.btn-learn-more:hover {
+    background-color: var(--primary-color-hover);
+}
+
+.btn-contact:hover {
+    background-color: var(--secondary-color-hover);
+}
+
+.btn-submit {
+    background-color: var(--primary-color);
+    font-size: 18px;
+}
+
+.btn-submit:hover {
+    background-color: var(--primary-color-hover);
+    color: var(--text-light);
+}
+
+.btn-cotacao{
+  background-color: var(--primary-color);
+  color: var(--text-light);
+  padding: 12px;
+  text-align: center;
+  font-weight: 500;
+  border-radius: 10px;
+  font-size: 20px;
+  transition: background-color .3s ease-in-out;
+  border: none;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.322);
+}
+.btn-cotacao:hover{
+  background-color: var(--primary-color-hover);
+  color: var(--text-light);
+}

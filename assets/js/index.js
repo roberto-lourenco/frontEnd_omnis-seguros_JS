@@ -1,6 +1,6 @@
 function ajustarFundo() {
     let hero = document.getElementById("cta");
-    if (window.innerWidth < 990) {
+    if (window.innerWidth < 993) {
       hero.style.backgroundImage = "";
       hero.style.backgroundColor = "#f8f9fa";
     } else {

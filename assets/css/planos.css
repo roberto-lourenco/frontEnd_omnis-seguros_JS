@@ -1,0 +1,92 @@
+@import url(styles.css);
+@import url(footerHeader.css);
+
+
+
+/* Cabeçalho da página */
+.pricing-header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.pricing-header-title{
+    margin: auto;
+}
+.pricing-header-desc{
+    margin: auto;
+    width: 80%;
+    font-size: 1.2em;
+    color: var(--text-dark);
+}
+
+
+
+/* Section planos */
+.pricing-box {
+    -webkit-box-shadow: 0px 5px 30px -10px rgba(0, 0, 0, 0.2);
+            box-shadow: 0px 5px 30px -10px rgba(0, 0, 0, 0.2);
+    padding: 35px 50px;
+    border-radius: 20px;
+    background-color: #fcfcfc;
+    position: relative;
+    transition: transform .3s ease-in-out;
+  }
+
+  .pricing-box:hover{
+    transform: translateY(-8px);
+  }
+  
+  .pricing-box .plan {
+    font-size: 34px;
+  }
+
+  .pricing-box i{
+    color: #1586c7;
+  }
+  .cards-features i{
+    margin-right: 8px;
+}
+  
+
+  /* Mais vendidos */
+  .pricing-badge {
+    position: absolute;
+    top: 0;
+    z-index: 999;
+    right: 0;
+    width: 100%;
+    display: block;
+    font-size: 15px;
+    padding: 0;
+    overflow: hidden;
+    height: 100px;
+  }
+  
+  .pricing-badge .badge {
+    float: right;
+    -webkit-transform: rotate(45deg);
+            transform: rotate(45deg);
+    right: -60px;
+    top: 25px;
+    position: relative;
+    text-align: center;
+    width: 200px;
+    font-size: 13px;
+    margin: 0;
+    padding: 7px 10px;
+    font-weight: 500;
+    color: #ffffff;
+    background: var(--secondary-color);
+  }
+  /* --- */
+
+  .btn-pricing{
+    background-color: var(--primary-color-hover);
+    border: none;
+    border-radius: 12px;
+    padding: 10px 14px;
+    color: var(--text-light);
+    font-weight: 500;
+  }
+

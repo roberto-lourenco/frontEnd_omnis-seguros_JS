@@ -93,21 +93,25 @@ document.getElementById('cpf').addEventListener('input', function(e) {
 const inputTelefone = document.getElementById("telefone");
 
 inputTelefone.addEventListener("input", function () {
-
   let telefone = inputTelefone.value;
-  telefone = telefone.replace(/\D/g, "");
+  telefone = telefone.replace(/\D/g, ""); // Remove tudo que não for número
 
-  if (telefone.length <= 2) {
-    telefone = telefone.replace(/^(\d{2})/, "($1");
-  } else if (telefone.length <= 5) {
-    telefone = telefone.replace(/^(\d{2})(\d{1})/, "($1) $2");
-  } else if (telefone.length <= 9) {
-    telefone = telefone.replace(/^(\d{2})(\d{1})(\d{4})/, "($1) $2$3-");
-  } else {
-    telefone = telefone.replace(/^(\d{2})(\d{1})(\d{4})(\d{4})/, "($1) $2$3-$4");
+  if (telefone.length > 0) {
+    if (telefone.length <= 2) {
+      telefone = telefone.replace(/^(\d{0,2})/, "($1");
+    } else if (telefone.length <= 7) {
+      telefone = telefone.replace(/^(\d{2})(\d{0,5})/, "($1) $2");
+    } else if (telefone.length <= 10) {
+      telefone = telefone.replace(/^(\d{2})(\d{1})(\d{0,4})/, "($1) $2$3");
+    } else {
+      telefone = telefone.replace(/^(\d{2})(\d{1})(\d{4})(\d{0,4})/, "($1) $2$3-$4");
+    }
   }
+
   inputTelefone.value = telefone;
 });
-  
+
+// Padronizar CEP 
+
 
   
