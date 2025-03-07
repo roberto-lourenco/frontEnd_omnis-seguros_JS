@@ -1,6 +1,6 @@
 // Selecionar modelo do veículo
 const marcas = {
-    volkswagen:["Gol","Polo","T-Cross","Voyage","Virtus"],
+    volkswagen:["Gol","Polo","Jetta","Voyage","Virtus"],
     fiat:["Argo","Cronos","Gran Siena","Mobi","Strada","Toro" ],
     chevrolet:["Cruze","Onix","Prisma","Spin","Tracker"]
 };
@@ -111,7 +111,25 @@ inputTelefone.addEventListener("input", function () {
   inputTelefone.value = telefone;
 });
 
-// Padronizar CEP 
+// Capturando dados do forms e redirecionamento
 
+document.getElementById("form-cotacao").addEventListener("submit", function(e){
+  e.preventDefault();
 
-  
+  let dadosForm = {
+    nome: document.getElementById("name").value.toLowerCase(),
+    cpf: document.getElementById("cpf").value,
+    dataNasc: document.getElementById("dataNasc").value,
+    telefone: document.getElementById("telefone").value,
+    cep: document.getElementById("cep").value,
+    marcaVeiculo: document.getElementById("marca").value,
+    modeloVeiculo: document.getElementById("modelo").value,
+    anoVeiculo: document.getElementById("ano-auto").value,
+    termosCheck: document.getElementById("termos").checked
+  };
+
+  localStorage.setItem("cotacaoData",JSON.stringify(dadosForm));
+
+  window.location.href = "resultadoCotacao.html";
+});
+
