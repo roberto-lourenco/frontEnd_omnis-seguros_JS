@@ -50,5 +50,5 @@ if(receberForm){
     document.getElementById("resultadoAno").innerText = frmUser.anoVeiculo;
 
 }else {
-    console.log("A sessão local está vazia.");
+    document.getElementsByTagName("main")[0].innerHTML = `<h1 class="container col-xxl-8 px-4 py-5 display-4">Sua sessão expirou. <a href="index.html">Refaça a cotação novamente</a></h1>`;
 }

@@ -52,6 +52,6 @@ if(receberFormCalc){
     document.getElementById("valor-completo").innerHTML = `R$ ${calcularSeguro(valorFipe,idade,cepUser,valorPlanos.completo).toFixed(2)}`;
     document.getElementById("valor-premium").innerHTML = `R$ ${calcularSeguro(valorFipe,idade,cepUser,valorPlanos.premium).toFixed(2)}`;
 
-} else {
-    console.log("A sessão local está vazia.");
-}
+} 
+
+localStorage.removeItem("cotacaoData");
