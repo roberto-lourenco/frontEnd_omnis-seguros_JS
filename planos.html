@@ -17,10 +17,12 @@
 <body>
   <!-- HEADER -->
   <header id="header-top">
-    <nav class="navbar navbar-expand-lg nav-container" style="background-color: #fff">
+    <nav class="navbar navbar-expand-md nav-container">
       <div class="container-fluid">
         <a class="navbar-brand" href="index.html">
-          <picture><img src="assets/img/logo_omnis.png" alt="Imagem de um escudo em forma de O com um veiculo pendurado em um cadeado. A sua direita escrito: mnis" class="d-inline-block" />
+          <picture><img src="assets/img/logo_omnis.png"
+              alt="Imagem de um escudo em forma de O com um veiculo pendurado em um cadeado. A sua direita escrito: mnis"
+              class="d-inline-block" />
           </picture>
         </a>
 
@@ -33,6 +35,8 @@
             <a class="nav-link" href="index.html">Início</a>
             <a class="nav-link" aria-current="page" href="planos.html">Planos</a>
             <a class="nav-link" href="servicos.html">Serviços</a>
+            <button class="btn-cotacao-header" onclick="window.location.href='index.html#form-cotacao'">Cotar
+              grátis</button>
           </div>
         </div>
       </div>
@@ -44,155 +48,150 @@
   <main>
 
     <section class="pricing-container" id="pricing">
-      
-  
-          <section id="hero-pricing" class="row pricing-header py-5" style="background: url('') center/cover no-repeat">
-              <div class="col-lg-10">
-                  <div class="title-box">
-                      <h3 class="my-2 fw-semibold display-5 pricing-header-title">Encontre a proteção ideal para o seu veículo</h3>
 
-                      <p class="my-3 pricing-header-desc">Oferecemos planos flexíveis e completos para garantir sua segurança e tranquilidade no dia a dia. Os valores podem variar de acordo com o perfil do condutor, modelo do veículo e outras condições. Faça uma simulação e descubra a melhor opção para você!</p>
-                      <button href="#" class="btn btn-cotacao mt-1">Cotação rápida</button>
-                  </div>
-              </div>
-            </section>
-  
-            <div class="container">
-            <section class="row mt-2 pt-4 planos-cards">
-              <h3 class="title-heading display-6 my-4 pb-3 border-bottom">Nossos Planos</h3>
-              <div class="col-lg-4">
-                  <div class="pricing-box mt-4">
+
+      <!-- Hero Section - Planos -->
+      <header id="hero-pricing" class="pricing-header py-5"
+        style="background: url('assets/img/headerDesktop_planos.jpg') center/cover no-repeat">
+        <div class="container col-lg-8 col-10">
+          <h2 class="my-2 fw-semibold display-5 pricing-header-title">Encontre a proteção ideal para o seu veículo</h2>
+          <p class="my-3 pricing-header-desc">
+            Oferecemos planos flexíveis e completos para garantir sua segurança e tranquilidade no dia a dia. Os valores
+            podem variar de acordo com o perfil do condutor, modelo do veículo e outras condições. Faça uma simulação e
+            descubra a melhor opção para você!
+          </p>
+          <button href="#" class="btn-cotacao mt-1 fs-4">Cotação rápida</button>
+        </div>
+      </header>
+
+      <section class="container mt-2 pt-4 planos-cards">
+        <h3 class="title-heading display-6 my-4 pb-3 border-bottom">Nossos Planos</h3>
+        <div class="row gy-4">
+    
+            <!-- Plano Básico -->
+            <article class="col-12 col-md-6 col-lg-6 col-xl-4 d-flex justify-content-center">
+                <div class="pricing-box mt-4 w-100">
+                    <header>
                       <i class="fas fa-car-side h1"></i>
-                      <h4 class="f-20">Plano Básico</h4>
-          
-                      <div class="mt-4 pt-2 cards-features">
-                          <p class="mb-2 f-18">Inclui:</p>
-          
-                          <p class="mb-2"><i class="fas fa-check-circle text-success f-18 mr-2"></i>Proteção contra terceiros</p>
-                          <p class="mb-2"><i class="fas fa-check-circle text-success f-18 mr-2"></i>Assistência 24 horas</p>
-                          <p class="mb-2"><i class="fas fa-check-circle text-success f-18 mr-2"></i>Guincho até 100 km</p>
-                          <p class="mb-2"><i class="fas fa-times-circle text-danger f-18 mr-2"></i>Carro reserva por 30 dias</p>
-                      </div>
-          
-                      <p class="mt-4 pt-2 text-muted">Plano essencial para quem deseja uma cobertura básica e suporte emergencial.</p>
-          
-                      <div class="pricing-plan mt-4 pt-2">
-                          <h4 class="text-muted">A partir de <span class="plan pl-3 text-dark">R$ 99,00/mês</span></h4>
-                      </div>
-          
-                      <div class="mt-4 pt-3">
-                          <button onclick="window.location.href='index.html';" class="btn-pricing">Fazer cotação</button>
-                      </div>
-                  </div>
-              </div>
-          
-              <div class="col-lg-4">
-                  <div class="pricing-box mt-4">
-                      <div class="pricing-badge">
-                          <span class="badge">Mais Popular</span>
-                      </div>
-          
-                      <i class="fas fa-car-crash h1"></i>
-                      <h4 class="f-20">Plano Completo</h4>
-          
-                      <div class="mt-4 pt-2 cards-features">
-                          <p class="mb-2 f-18">Inclui:</p>
-          
-                          <p class="mb-2"><i class="fas fa-check-circle text-success f-18 mr-2"></i>Proteção contra terceiros</p>
-                          <p class="mb-2"><i class="fas fa-check-circle text-success f-18 mr-2"></i>Assistência 24 horas</p>
-                          <p class="mb-2"><i class="fas fa-check-circle text-success f-18 mr-2"></i>Guincho até 200 km</p>
-                          <p class="mb-2"><i class="fas fa-check-circle text-success f-18 mr-2"></i>Cobertura contra roubo e furto</p>
-                          <p class="mb-2"><i class="fas fa-times-circle text-danger f-18 mr-2"></i>Carro reserva por 30 dias</p>
-                      </div>
-          
-                      <p class="mt-4 pt-2 text-muted">O plano ideal para quem busca mais segurança e cobertura em diferentes situações.</p>
-          
-                      <div class="pricing-plan mt-4 pt-2">
-                          <h4 class="text-muted">A partir de <span class="plan pl-3 text-dark">R$ 119,00/mês</span></h4>
-                      </div>
-          
-                      <div class="mt-4 pt-3">
-                          <button onclick="window.location.href='index.html';" class="btn-pricing">Fazer cotação</button>
-                      </div>
-                  </div>
-              </div>
-          
-              <div class="col-lg-4">
-                  <div class="pricing-box mt-4">
+                      <h3 class="f-20">Plano Básico</h3>
+                    </header>
+                    <ul class="mt-4 pt-2 cards-features ps-0">
+                        <li><i class="fas fa-check-circle text-success"></i> Proteção contra terceiros</li>
+                        <li><i class="fas fa-check-circle text-success"></i> Assistência 24 horas</li>
+                        <li><i class="fas fa-check-circle text-success"></i> Guincho até 100 km</li>
+                        <li><i class="fas fa-times-circle text-danger"></i> Carro reserva por 30 dias</li>
+                    </ul>
+                    <p class="mt-4 pt-2 text-muted">Plano essencial para quem deseja uma cobertura básica e suporte emergencial.</p>
+                    <section class="pricing-plan mt-4 pt-2">
+                        <h3 class="text-muted">A partir de <span class="plan pl-3 text-dark">R$ 99,00/mês</span></h3>
+                    </section>
+                    <button onclick="window.location.href='index.html#form-cotacao';" class="btn-pricing mt-3">Fazer cotação</button>
+                </div>
+            </article>
+    
+            <!-- Plano Intermediário -->
+            <article class="col-12 col-md-6 col-lg-6 col-xl-4 d-flex justify-content-center">
+                <div class="pricing-box mt-4 w-100">
+                    <div class="pricing-badge">
+                        <span class="badge">Mais Popular</span>
+                    </div>
+    
+                    <header>
+                        <i class="fas fa-car-crash h1"></i>
+                        <h3 class="f-20">Plano Intermediário</h3>
+                    </header>
+    
+                    <section class="mt-4 pt-2 cards-features">   
+                        <ul>
+                            <li><i class="fas fa-check-circle text-success"></i> Proteção contra terceiros</li>
+                            <li><i class="fas fa-check-circle text-success"></i> Assistência 24 horas</li>
+                            <li><i class="fas fa-check-circle text-success"></i> Guincho até 200 km</li>
+                            <li><i class="fas fa-check-circle text-success"></i> Cobertura contra roubo e furto</li>
+                            <li><i class="fas fa-times-circle text-danger"></i> Carro reserva por 30 dias</li>
+                        </ul>
+                    </section>
+    
+                    <p class="mt-4 pt-2 text-muted">O plano ideal para quem busca mais segurança e cobertura em diferentes situações.</p>
+    
+                    <section class="pricing-plan mt-4 pt-2">
+                        <h3 class="text-muted">A partir de <span class="plan pl-3 text-dark">R$ 119,00/mês</span></h3>
+                    </section>
+    
+                    <button onclick="window.location.href='index.html#form-cotacao';" class="btn-pricing mt-3">Fazer cotação</button>
+                </div>
+            </article>
+    
+            <!-- Plano Premium -->
+            <article class="col-12 col-md-6 col-lg-6 col-xl-4 d-flex justify-content-center">
+                <div class="pricing-box mt-4 w-100">
+                    <header>
                       <i class="fas fa-shield-alt h1"></i>
-                      <h4 class="f-20">Plano Premium</h4>
-          
-                      <div class="mt-4 pt-2 cards-features">
-                          <p class="mb-2 f-18">Inclui:</p>
-          
-                          <p class="mb-2"><i class="fas fa-check-circle text-success f-18 mr-2"></i>Proteção contra terceiros</p>
-                          <p class="mb-2"><i class="fas fa-check-circle text-success f-18 mr-2"></i>Assistência 24 horas</p>
-                          <p class="mb-2"><i class="fas fa-check-circle text-success f-18 mr-2"></i>Guincho ilimitado</p>
-                          <p class="mb-2"><i class="fas fa-check-circle text-success f-18 mr-2"></i>Cobertura total (roubo, furto, colisão, incêndio)</p>
-                          <p class="mb-2"><i class="fas fa-check-circle text-success f-18 mr-2"></i>Carro reserva por 30 dias</p>
-                          <p class="mb-2"><i class="fas fa-check-circle text-success f-18 mr-2"></i>Cobertura para vidros, faróis e retrovisores</p>
-                      </div>
-          
-                      <p class="mt-4 pt-2 text-muted">O plano mais completo, oferecendo total proteção para o seu veículo.</p>
-          
-                      <div class="pricing-plan mt-4 pt-2">
-                          <h4 class="text-muted">A partir de <span class="plan pl-3 text-dark">R$ 139,00/mês</span></h4>
-                      </div>
-          
-                      <div class="mt-4 pt-3">
-                          <button onclick="window.location.href='index.html';" class="btn-pricing">Fazer cotação</button>
-                      </div>
-                  </div>
-              </div>
-          </section>
-          
-      </div>
-  </section>
+                      <h3 class="f-20">Plano Premium</h3>
+                    </header>
+                    <ul class="mt-4 pt-2 cards-features ps-0">
+                        <li><i class="fas fa-check-circle text-success"></i> Proteção contra terceiros</li>
+                        <li><i class="fas fa-check-circle text-success"></i> Assistência 24 horas</li>
+                        <li><i class="fas fa-check-circle text-success"></i> Guincho ilimitado</li>
+                        <li><i class="fas fa-check-circle text-success"></i> Cobertura total (roubo, furto, colisão, incêndio)</li>
+                        <li><i class="fas fa-check-circle text-success"></i> Carro reserva por 30 dias</li>
+                        <li><i class="fas fa-check-circle text-success"></i> Cobertura para vidros, faróis e retrovisores</li>
+                    </ul>
+                    <p class="mt-4 pt-2 text-muted">O plano mais completo, oferecendo total proteção para o seu veículo.</p>
+                    <section class="pricing-plan mt-4 pt-2">
+                        <h3 class="text-muted">A partir de <span class="plan pl-3 text-dark">R$ 139,00/mês</span></h3>
+                    </section>
+                    <button onclick="window.location.href='index.html#form-cotacao';" class="btn-pricing mt-3">Fazer cotação</button>
+                </div>
+            </article>
+    
+        </div>
+    </section>
+    
 
   </main>
+
   <!-- Footer -->
   <footer class="footer">
-
     <section class="footer-info">
-      <article class="footer-container">
-        <div class="footer-column">
+      <div class="footer-container">
+        <nav class="footer-column">
           <h6>Navegação</h6>
-          <hr>
-          <p><a href="index.html">Inicio</a></p>
-          <p><a href="planos.html">Planos</a></p>
-          <p><a href="servicos.html">Serviços</a></p>
-          <p><a href="#">Cotação gratuita</a></p>
-        </div>
+          <ul class="px-0">
+            <li><a href="index.html">Início</a></li>
+            <li><a href="planos.html">Planos</a></li>
+            <li><a href="servicos.html">Serviços</a></li>
+            <li><a href="#">Cotação gratuita</a></li>
+          </ul>
+        </nav>
 
-        <div class="footer-column">
+        <aside class="footer-column">
           <h6>Links Úteis</h6>
-          <hr>
-          <p><a href="#">Minha Conta</a></p>
-          <p><a href="#">Torne-se um Afiliado</a></p>
-          <p><a href="#">Taxas de Seguro</a></p>
-          <p><a href="#">Ajuda</a></p>
-        </div>
+          <ul class="px-0">
+            <li><a href="#">Minha Conta</a></li>
+            <li><a href="#">Torne-se um Afiliado</a></li>
+            <li><a href="#">Taxas de Seguro</a></li>
+            <li><a href="#">Ajuda</a></li>
+          </ul>
+        </aside>
 
-        <div class="footer-column">
+        <aside class="footer-column">
           <h6>Contato</h6>
-          <hr>
           <p><i class="fas fa-home"></i> Rua Cel. Carlos Matos, 86 - Centro, Nova Iguaçu - RJ, 26210-200</p>
           <p><i class="fas fa-envelope"></i> contato@omnisseguros.com.br</p>
           <p><i class="fas fa-phone"></i> +55 21 91234-5678</p>
-        </div>
-      </article>
+        </aside>
+      </div>
     </section>
 
     <article class="footer-copyright">
       © 2025 Omnis. Todos os direitos reservados.
     </article>
   </footer>
-
   <!-- END -->
 
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"></script>
-  <script src="assets/js/planos.js"></script>
+  <script src="assets/js/planos/planos.js"></script>
 </body>
 
 </html>

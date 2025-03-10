@@ -44,11 +44,17 @@ if(receberForm){
     document.getElementById("resultadoTelefoneCliente").innerText = frmUser.telefone;
     document.getElementById("resultadoTelefoneCliente").innerText = frmUser.telefone;
 
+    // Endereço
+    document.getElementById("resultadoLogradouro").innerText = frmUser.endereco.rua;
+    document.getElementById("resultadoBairro").innerText = frmUser.endereco.bairro;
+    document.getElementById("resultadoCidade").innerText = frmUser.endereco.cidade;
+    document.getElementById("resultadoEstado").innerText = frmUser.endereco.uf;
+
     // Veiculo cotado
     document.getElementById("resultadoMarca").innerText = captalizePalavra(frmUser.marcaVeiculo);
-    document.getElementById("resultadoModelo").innerText = captalizePalavra(frmUser.modeloVeiculo);
+    document.getElementById("resultadoModelo").innerText = captalizePalavra(frmUser.modeloVeiculo).split("_").join(" ");
     document.getElementById("resultadoAno").innerText = frmUser.anoVeiculo;
 
-}else {
-    document.getElementsByTagName("main")[0].innerHTML = `<h1 class="container col-xxl-8 px-4 py-5 display-4">Sua sessão expirou. <a href="index.html">Refaça a cotação novamente</a></h1>`;
+    console.log(frmUser.endereco.rua)
+
 }

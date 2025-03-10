@@ -17,7 +17,7 @@
 <body>
   <!-- HEADER -->
   <header id="header-top">
-    <nav class="navbar navbar-expand-lg nav-container" style="background-color: #fff">
+    <nav class="navbar navbar-expand-md nav-container">
       <div class="container-fluid">
         <a class="navbar-brand" href="index.html">
           <picture><img src="assets/img/logo_omnis.png" alt="Omnis Seguros" class="d-inline-block" />
@@ -33,6 +33,7 @@
             <a class="nav-link" href="index.html">Início</a>
             <a class="nav-link" href="planos.html">Planos</a>
             <a class="nav-link" href="servicos.html">Serviços</a>
+            <button class="btn-cotacao-header" onclick="window.location.href='index.html#form-cotacao'">Cotar grátis</button>
           </div>
         </div>
       </div>
@@ -70,6 +71,28 @@
             </tr>
           </tbody>
         </table>
+
+        <h4>Endereço</h4>
+        <table class="table table-striped">
+          <tbody>
+            <tr>
+              <th scope="row">Logradouro</th>
+              <td id="resultadoLogradouro"></td>
+            </tr>
+            <tr>
+              <th scope="row">Bairro</th>
+              <td id="resultadoBairro"></td>
+            </tr>
+            <tr>
+              <th scope="row">Cidade</th>
+              <td id="resultadoCidade"></td>
+            </tr>
+            <tr>
+              <th scope="row">Estado</th>
+              <td id="resultadoEstado"></td>
+            </tr>
+          </tbody>
+        </table>
   
         <h3 class="mt-5">Veículo Cotado</h3>
         <div class="row">
@@ -91,9 +114,9 @@
               </tbody>
             </table>
           </div>
-          <div class="col-md-4">
-            <img id="resultadoFotoVeiculo" src="https://via.placeholder.com/150" alt="Foto do Veículo" class="img-fluid" />
-          </div>
+          <!-- <div class="col-md-4">
+            <img id="resultadoFotoVeiculo" src="#" alt="Foto do Veículo" class="img-fluid" />
+          </div> -->
         </div>
       </article>
     </section>
@@ -115,12 +138,12 @@
                 <tr>
                   <td>Plano Básico</td>
                   <td id="valor-basico"></td>
-                  <td>Cobertura contra roubo e colisões</td>
+                  <td>Cobertura contra terceiros + Guincho</td>
                 </tr>
                 <tr>
-                  <td>Plano Completo</td>
-                  <td id="valor-completo"></td>
-                  <td>Cobertura total com assistência 24h</td>
+                  <td>Plano Intermediário</td>
+                  <td id="valor-intermediario"></td>
+                  <td>Cobertura contra roubo e furto</td>
                 </tr>
                 <tr>
                   <td>Plano Premium</td>
@@ -133,42 +156,75 @@
         </div>
       </div>
     </section>
-  </main>
-  
-  
-  <!-- Footer -->
-  <footer class="footer">
 
-    <section class="footer-info">
-      <article class="footer-container">
-        <div class="footer-column">
-          <h6>Navegação</h6>
-          <hr>
-          <p><a href="index.html">Inicio</a></p>
-          <p><a href="planos.html">Planos</a></p>
-          <p><a href="servicos.html">Serviços</a></p>
-          <p><a href="#">Cotação gratuita</a></p>
+    <section class="cta container col-xxl-8 px-4 py-5">
+      <header class="cta-header">
+        <h2>Gostou dos resultados?</h2>
+        <p>Estamos à disposição para tirar suas dúvidas ou fornecer mais informações sobre sua cotação. Entre em contato agora!</p>
+      </header>
+      
+      <article class="cta-body">
+        <div class="sac-tel">
+          <h4>Central de Atendimento</h4>
+          <p><a href="tel:+40028922"><strong>4002 8922</strong></a>: Capitais e regiões metropolitanas.</p>
+          <p><a href="tel:+08001012222"><strong>0800 101 2222</strong></a>: Demais localidades.</p>
+          <p><a href="tel:+08001024444"><strong>0800 102 4444</strong></a>: Pessoas com deficiência auditiva e de fala.</p>
+    
+          <h5>Horário de Atendimento</h5>
+          <ul>
+            <li><strong>Segunda a Sexta: </strong> 09:00 - 18:00</li>
+            <li><strong>Sábado: </strong> 09:00 - 13:00</li>
+            <li><strong>Domingo: </strong> Fechado</li>
+          </ul>
         </div>
-
-        <div class="footer-column">
-          <h6>Links Úteis</h6>
-          <hr>
-          <p><a href="#">Minha Conta</a></p>
-          <p><a href="#">Torne-se um Afiliado</a></p>
-          <p><a href="#">Taxas de Seguro</a></p>
-          <p><a href="#">Ajuda</a></p>
-        </div>
-
-        <div class="footer-column">
-          <h6>Contato</h6>
-          <hr>
-          <p><i class="fas fa-home"></i> Rua Cel. Carlos Matos, 86 - Centro, Nova Iguaçu - RJ, 26210-200</p>
-          <p><i class="fas fa-envelope"></i> contato@omnisseguros.com.br</p>
-          <p><i class="fas fa-phone"></i> +55 21 91234-5678</p>
+    
+        <div class="sac-whatsapp">
+          <h4>Fale Conosco pelo WhatsApp</h4>
+          <p>Se preferir, entre em contato diretamente com nosso atendimento via WhatsApp para uma cotação rápida e personalizada!</p>
+          <a href="https://wa.me/5521999999999" class="btn btn-success" target="_blank">
+            <i class="fab fa-whatsapp"></i> Conversar pelo WhatsApp
+          </a>
         </div>
       </article>
     </section>
-
+    
+    
+  </main>
+  
+  
+   <!-- Footer -->
+   <footer class="footer">
+    <section class="footer-info">
+      <div class="footer-container">
+        <nav class="footer-column">
+          <h6>Navegação</h6>
+          <ul class="px-0">
+            <li><a href="index.html">Início</a></li>
+            <li><a href="planos.html">Planos</a></li>
+            <li><a href="servicos.html">Serviços</a></li>
+            <li><a href="#">Cotação gratuita</a></li>
+          </ul>
+        </nav>
+  
+        <aside class="footer-column">
+          <h6>Links Úteis</h6>
+          <ul class="px-0">
+            <li><a href="#">Minha Conta</a></li>
+            <li><a href="#">Torne-se um Afiliado</a></li>
+            <li><a href="#">Taxas de Seguro</a></li>
+            <li><a href="#">Ajuda</a></li>
+          </ul>
+        </aside>
+  
+        <aside class="footer-column">
+          <h6>Contato</h6>
+          <p><i class="fas fa-home"></i> Rua Cel. Carlos Matos, 86 - Centro, Nova Iguaçu - RJ, 26210-200</p>
+          <p><i class="fas fa-envelope"></i> contato@omnisseguros.com.br</p>
+          <p><i class="fas fa-phone"></i> +55 21 91234-5678</p>
+        </aside>
+      </div>
+    </section>
+  
     <article class="footer-copyright">
       © 2025 Omnis. Todos os direitos reservados.
     </article>
@@ -178,8 +234,8 @@
 
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"></script>
-  <script src="assets/js/resultadoCotacao.js"></script>
-  <script type="module" src="assets/js/calculadora.js"></script>
+  <script src="assets/js/cotacao/resultadoCotacao.js"></script>
+  <script type="module" src="assets/js/cotacao/calculadora.js"></script>
 </body>
 
 </html>

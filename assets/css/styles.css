@@ -26,9 +26,13 @@ body {
 .btn-contact,
 .btn-learn-more,
 .btn-submit {
+    border-radius: 10px;
+    padding: 8px;
+    border: 1px solid #88888850;
     font-weight: 600;
     color: var(--text-light);
     font-size: 22px;
+    transition: background-color .2s ease-in-out;
 }
 
 .btn-learn-more {
@@ -73,3 +77,9 @@ body {
   background-color: var(--primary-color-hover);
   color: var(--text-light);
 }
+
+
+
+
+
+

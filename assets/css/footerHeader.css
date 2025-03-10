@@ -2,15 +2,16 @@
 /* Container NAV Boostrap */
 
 .nav-container {
+  background-color: #fff;
     border-bottom: 1px solid #8888885f;
     padding: 10px 10%;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.11);
+    box-shadow: 0 2px 4px #8888885f;
   }
   /* Menu-hamburguer */
   
   .navbar-toggler {
     border: none;
-    color: #2b2b2b;
+    color: var(--text-dark);
     font-size: 28px;
   }
   
@@ -70,15 +71,20 @@
   .navbar-brand img:hover {
     transform: translateY(-2px);
   }
-  
-  /* Divisor de seções */
-  .divider {
-    height: 1.5rem;
-    background-color: rgba(253, 253, 253, 0.1);
-    border: solid rgba(0, 0, 0, 0.15);
-    border-width: 1px 0;
-    box-shadow: inset 0 0.5em 1.5em rgba(0, 0, 0, 0.1),
-      inset 0 0.125em 0.5em rgba(0, 0, 0, 0.15);
+
+  .btn-cotacao-header{
+    font-size: 1.2rem;
+    font-weight: 500;
+    border-radius: 22px;
+    color: var(--text-light);
+    background-color: var(--primary-color);
+    padding: 6px 15px;
+    border: none;
+    transition: background-color .3s;
+    white-space: nowrap;
+  }
+  .btn-cotacao-header:hover{
+    background-color: var(--primary-color-hover);
   }
 
 
@@ -91,6 +97,10 @@
   padding: 20px 0;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.11);
   margin-top: 5vh;
+}
+
+.footer ul li{
+  list-style-type: none;
 }
 
 .footer-info {
@@ -114,8 +124,10 @@
 
 .footer-column h6 {
   font-size: 18px;
+  padding-bottom: 8px;
   font-weight: bold;
   margin-bottom: 10px;
+  border-bottom: 2px solid #065fd380;
 }
 
 .footer-column hr {
@@ -169,3 +181,27 @@
     min-width: 80%;
   }
 }
+@media (max-width:768px){
+
+  .nav-container{
+    border-bottom: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.11);
+  }
+  #header-top {
+    background-color: #fafafa;
+    position: fixed; 
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000; 
+  }
+  .navbar-brand img{
+    width: 132px;
+  }
+  
+  body {
+    padding-top: 70px;
+  }
+}
+
+

@@ -49,7 +49,7 @@ if(receberFormCalc){
 
     // Exibir valores no html
     document.getElementById("valor-basico").innerHTML = `R$ ${calcularSeguro(valorFipe,idade,cepUser,valorPlanos.basico).toFixed(2)}`;
-    document.getElementById("valor-completo").innerHTML = `R$ ${calcularSeguro(valorFipe,idade,cepUser,valorPlanos.completo).toFixed(2)}`;
+    document.getElementById("valor-intermediario").innerHTML = `R$ ${calcularSeguro(valorFipe,idade,cepUser,valorPlanos.completo).toFixed(2)}`;
     document.getElementById("valor-premium").innerHTML = `R$ ${calcularSeguro(valorFipe,idade,cepUser,valorPlanos.premium).toFixed(2)}`;
 
 } 

@@ -1,11 +1,14 @@
 @import url(styles.css);
 @import url(footerHeader.css);
 
+body{
+
+}
+
 /* Texto Hero */
 .description-hero {
     font-weight: 400;
 }
-
 
 
 /* Formulario */
@@ -89,7 +92,7 @@
 }
 /* -- */
 
-.error-cpf {
+.error-input {
     color: red;
     position: absolute;
     top: 100%;
@@ -187,7 +190,7 @@
 
 .card-text {
     font-size: 1rem;
-    color: #666;
+    color: var(--text-dark);
     margin-bottom: 20px;
 }
 
@@ -213,8 +216,13 @@
 
 }
 
+.description-quote{
+  color: var(--text-dark);
+  font-weight: 400;
+}
+
 .link-quote {
-    text-decoration: none;
+    border: 1px solid #88888850;
     font-weight: 500;
     padding: 16px;
     background-color: var(--primary-color-hover);
@@ -234,6 +242,7 @@
   @media (min-width: 993px) {
     .description-hero {
       color: var(--text-light);
+      font-size: 1.5rem;
     }
     .title-hero {
       background: linear-gradient(90deg, #00d9ff 7%, #03ec7f 60%);
@@ -265,6 +274,8 @@
     .vetor-hero {
       display: flex;
       width: 100%;
+      max-width: 400;
+      max-height: 400px;
       align-items: center;
       justify-content: center;
     }
@@ -284,6 +295,12 @@
       text-align: center;
       font-size: 1.2em;
       padding: 14px;
+    }
+  }
+  @media (max-width:768px){
+    
+    body {
+      padding-top: 40px; 
     }
   }
   @media (max-width: 568px) {
