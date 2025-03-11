@@ -13,8 +13,7 @@ if(receberFormCalc){
     let marca = frmCalculadora.marcaVeiculo;
     let modelo = frmCalculadora.modeloVeiculo;
     let ano = frmCalculadora.anoVeiculo;
-    // FIPE
-    let valorFipe = carrosFipe[marca][modelo][ano]*0.4;
+    let valorFipe = carrosFipe[marca][modelo][ano]*0.4; // FIPE
     let valorPlanos = {
         basico: 1.3,
         completo: 1.5,
