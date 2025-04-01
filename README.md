@@ -1,4 +1,4 @@
-# Projeto Omnis 🚗🔐
+# Projeto Omnis - Em desenvolvimento 🚗🔐
 
 O Projeto **Omnis** foi desenvolvido como parte da Unidade Curricular de Front-End no curso Programador Cripto do SENAC Nova Iguaçu, em parceria com a Transfero.
 
@@ -25,4 +25,8 @@ Atualmente, o site está passando por uma **refatoração para Django**, visando
 - Implementar o back-end com Django
 - Melhorar a experiência do usuário
 - Integrar o ChatBot ao site.
+
+## 🌐 Projeto Online
+Você pode acessar a versão atual do projeto no GitHub Pages:
+[Omnis Security - GitHub Pages](https://roberto-lourenco.github.io/frontEnd_omnis-seguros_JS/)
 
